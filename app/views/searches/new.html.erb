@@ -1,0 +1,7 @@
+<h1>Look up companies by the code</h1>
+<h3>Please enter a company code</h3>
+<%= form_tag("/search", method: "post") do %>
+  <%= label_tag(:q, "") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
